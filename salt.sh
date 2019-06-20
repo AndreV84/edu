@@ -3,6 +3,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sudo launchctl limit maxfiles 4096 8192
 sudo mkdir /etc/salt
+curl -s https://raw.githubusercontent.com/AndreV84/edu/master/askip |bash
 #sudo echo master : 10.0.0.2 > minion
 sudo mv minion /etc/salt/
 brew install saltstack
