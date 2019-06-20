@@ -1,6 +1,5 @@
 #!/bin/bash
-echo type ip address of your master server, please, e.g. 10.0.0.1  and press ENTER && read master && echo master: $master >minion
-sudo mkdir /etc/salt
+echo type ip address of your master server, please, e.g. 10.0.0.1  and press ENTER && read master && echo master: $master >minion && sudo mkdir /etc/salt
 sudo mv minion /etc/salt/
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sudo launchctl limit maxfiles 4096 8192
